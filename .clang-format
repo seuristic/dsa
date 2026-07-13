@@ -1,0 +1,39 @@
+---
+Language: Cpp
+BasedOnStyle: Google
+IndentWidth: 2
+Standard: Latest
+
+# Braces and Indentation
+BreakBeforeBraces: Attach
+NamespaceIndentation: All
+AccessModifierOffset: -2
+AlignAfterOpenBracket: BlockIndent
+BinPackArguments: false
+BinPackParameters: true
+
+# Inline/Short stuff
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
+AllowShortLoopsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortBlocksOnASingleLine: Empty
+MaxEmptyLinesToKeep: 1
+
+# Alignment and Spacing
+DerivePointerAlignment: false
+PointerAlignment: Left
+SpaceInEmptyParentheses: false
+SpacesInAngles: false
+SpacesInContainerLiterals: false
+SpacesInCStyleCastParentheses: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+
+# Includes
+SortIncludes: true
+
+# Cleanup
+TabWidth: 2
+UseTab: Never
+...
