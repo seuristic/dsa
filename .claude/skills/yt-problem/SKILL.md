@@ -155,8 +155,12 @@ Use these sections, in order. Keep each tight — bullets and tables over paragr
 Append a row to the table in `yt/README.md`:
 
 ```
-| NNN | [Problem Title](NNN-problem-slug/) | <main topic> | TODO |
+| NNN | [Problem Title](NNN-problem-slug/) | `topic`, `topic` | TODO |
 ```
+
+Topic: 1–2 lowercase keywords, each in backticks, comma-separated (e.g. `` `array`, `two pointers` ``).
+
+If the problem is in the Blind 75 section, replace its `—` in the Folder column with `[NNN](NNN-problem-slug/)`.
 
 ## 7. Finish
 
