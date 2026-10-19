@@ -10,7 +10,7 @@ New episode: run `/yt-problem <problem link, name, or statement>` in Claude Code
 
 ## Blind 75
 
-The classic 75 LeetCode problems that cover the core interview patterns. 🔒 = LeetCode Premium.
+The classic 75 LeetCode problems that cover the core interview patterns. Premium-only problems are swapped for free ones with the same topic and difficulty.
 
 | #   | Problem                                                                                                                                               | Topic                         | Difficulty | Folder |
 | --- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- | ---------- | ------ |
@@ -45,14 +45,14 @@ The classic 75 LeetCode problems that cover the core interview patterns. 🔒 = 
 | 29  | [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)                                                             | `matrix`, `dfs`               | Medium     | —      |
 | 30  | [Number of Islands](https://leetcode.com/problems/number-of-islands/)                                                                                 | `matrix`, `dfs`               | Medium     | —      |
 | 31  | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)                                                           | `array`, `hash set`           | Medium     | —      |
-| 32  | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) 🔒                                                                                | `graph`, `topological sort`   | Hard       | —      |
-| 33  | [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) 🔒                                                                                | `graph`, `union find`         | Medium     | —      |
-| 34  | [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) 🔒      | `graph`, `union find`         | Medium     | —      |
+| 32  | [Build a Matrix With Conditions](https://leetcode.com/problems/build-a-matrix-with-conditions/)                                                      | `graph`, `topological sort`   | Hard       | —      |
+| 33  | [Redundant Connection](https://leetcode.com/problems/redundant-connection/)                                                                          | `graph`, `union find`         | Medium     | —      |
+| 34  | [Number of Provinces](https://leetcode.com/problems/number-of-provinces/)                                                                            | `graph`, `union find`         | Medium     | —      |
 | 35  | [Insert Interval](https://leetcode.com/problems/insert-interval/)                                                                                     | `intervals`                   | Medium     | —      |
 | 36  | [Merge Intervals](https://leetcode.com/problems/merge-intervals/)                                                                                     | `intervals`, `sorting`        | Medium     | —      |
 | 37  | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)                                                                 | `intervals`, `greedy`         | Medium     | —      |
-| 38  | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) 🔒                                                                                      | `intervals`, `sorting`        | Easy       | —      |
-| 39  | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) 🔒                                                                                | `intervals`, `heap`           | Medium     | —      |
+| 38  | [Teemo Attacking](https://leetcode.com/problems/teemo-attacking/)                                                                                    | `intervals`                   | Easy       | —      |
+| 39  | [Divide Intervals Into Minimum Number of Groups](https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/)                      | `intervals`, `heap`           | Medium     | —      |
 | 40  | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)                                                                             | `linked list`                 | Easy       | —      |
 | 41  | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)                                                                                 | `linked list`, `two pointers` | Easy       | —      |
 | 42  | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)                                                                       | `linked list`                 | Easy       | —      |
@@ -72,7 +72,7 @@ The classic 75 LeetCode problems that cover the core interview patterns. 🔒 = 
 | 56  | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                                                                   | `string`, `two pointers`      | Easy       | —      |
 | 57  | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                                                         | `string`, `dp`                | Medium     | —      |
 | 58  | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)                                                                       | `string`, `dp`                | Medium     | —      |
-| 59  | [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) 🔒                                                              | `string`, `design`            | Medium     | —      |
+| 59  | [Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)                                                                | `string`, `design`            | Medium     | —      |
 | 60  | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)                                                           | `tree`, `dfs`                 | Easy       | —      |
 | 61  | [Same Tree](https://leetcode.com/problems/same-tree/)                                                                                                 | `tree`, `dfs`                 | Easy       | —      |
 | 62  | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                                                                               | `tree`, `dfs`                 | Easy       | —      |
