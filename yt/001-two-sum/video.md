@@ -4,7 +4,7 @@
 
 1. Two Sum — From O(n²) to O(n) | LeetCode 1 Explained in C++
 2. Two Sum: The Hash Map Trick Every Beginner Must Know | Blind 75 #1
-3. LeetCode Two Sum — Brute Force, Two Pointers & Hash Map (C++)
+3. LeetCode Two Sum — Brute Force, Binary Search, Two Pointers & Hash Map (C++)
 
 ## Hook (first 30 sec)
 
@@ -31,46 +31,54 @@
 - Show [brute.cpp](brute.cpp), run it live.
 - Bottleneck: "for every number we **search** for its partner. Can the search be instant?"
 
-### 4. Better: Sort + Two Pointers (≈3 min)
+### 4. Better: Sort + Binary Search (≈3 min)
+
+- Whiteboard: the sorted `(value, index)` pairs. For one element, write `need`, then halve the range to the right of `i` step by step.
+- Point out why the search starts at `i + 1`: the `3 + 3` trap again.
+- Show [better1.cpp](better1.cpp), run it.
+- Why move on: a fresh search for every element. Partners only move left as `i` moves right, so can we scan just once?
+
+### 5. Better: Sort + Two Pointers (≈3 min)
 
 - Whiteboard: the sorted `(value, index)` pairs, with `l` at the left and `r` at the right.
 - Explain why moving a pointer never skips the answer (too small → `l++`, too big → `r--`).
-- Show [better.cpp](better.cpp), run it.
-- Why move on: sorting costs O(n log n), and we already use O(n) space.
+- Show [better2.cpp](better2.cpp), run it.
+- Why move on: the scan is O(n), but sorting still costs O(n log n), and we already use O(n) space.
 
-### 5. Key Insight (≈1 min)
+### 6. Key Insight (≈1 min)
 
 - "Standing at `x`, I need `target - x`." Write `need = target - x` big on the board.
 - "Have I seen it?" → hash map.
 
-### 6. Optimal: Hash Map (≈3 min)
+### 7. Optimal: Hash Map (≈3 min)
 
 - Whiteboard: an array on top and a map box below. Fill the map step by step.
 - Do the dry run on `[3, 2, 4]`, `6` (README table).
 - Stress the **check before insert** order, using the `3 + 3` trap.
 - Show [optimal.cpp](optimal.cpp), run it.
 
-### 7. Edge Cases + Common Mistakes (≈1 min)
+### 8. Edge Cases + Common Mistakes (≈1 min)
 
 - Duplicates `[3, 3]`, negatives, zeros. Mistake: inserting before checking.
 
-### 8. Comparison + Pattern (≈1 min)
+### 9. Comparison + Pattern (≈1 min)
 
 - Show the comparison table.
 - Pattern: "pair search → complement + hash map", "sorted array → two pointers".
 
-### 9. Follow-ups + Practice (≈1 min)
+### 10. Follow-ups + Practice (≈1 min)
 
 - Sorted input → Two Sum II. Three numbers → 3Sum. Next video teaser.
 
 ## YouTube Description
 
-Two Sum (LeetCode 1) explained step by step in C++: brute force O(n²) → sort + two pointers O(n log n) → hash map O(n). Learn the "complement" trick that solves dozens of interview problems.
+Two Sum (LeetCode 1) explained step by step in C++: brute force O(n²) → sort + binary search O(n log n) → sort + two pointers O(n log n) → hash map O(n). Learn the "complement" trick that solves dozens of interview problems.
 
 00:00 Intro
 00:00 Problem explained
 00:00 Constraints
 00:00 Brute force — O(n²)
+00:00 Sort + binary search — O(n log n)
 00:00 Sort + two pointers — O(n log n)
 00:00 Key insight
 00:00 Hash map — O(n)
@@ -84,7 +92,7 @@ Notes + code: https://github.com/seuristic/dsa/tree/main/yt/001-two-sum
 
 ## Tags
 
-two sum, leetcode 1, two sum leetcode, two sum c++, hash map, unordered_map, two pointers, blind 75, leetcode easy, dsa for beginners, coding interview, data structures and algorithms
+two sum, leetcode 1, two sum leetcode, two sum c++, hash map, unordered_map, binary search, two pointers, blind 75, leetcode easy, dsa for beginners, coding interview, data structures and algorithms
 
 ## Thumbnail Text
 

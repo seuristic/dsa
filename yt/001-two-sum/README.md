@@ -1,6 +1,6 @@
 # 001. Two Sum
 
-**Difficulty:** Easy · **Tags:** array, hash map, two pointers
+**Difficulty:** Easy · **Tags:** array, hash map, binary search, two pointers
 **Problem:** [LeetCode 1](https://leetcode.com/problems/two-sum/) · **Video:** TODO
 
 ## Problem in Simple Words
@@ -34,7 +34,8 @@ What this means:
 
 - **Arrays and indices:** `nums[i]` is the value, `i` is its position.
 - **Hash map (`unordered_map`):** stores key → value pairs. Looking up a key takes O(1) on average.
-- **Sorting + two pointers** (approach 2 only): two indices that move toward each other on a sorted array.
+- **Binary search** (approach 2): finds a value in a sorted array in O(log n) by halving the search range each step.
+- **Two pointers** (approach 3): two indices that move toward each other on a sorted array.
 
 ## How to Think About It
 
@@ -55,18 +56,26 @@ Whenever a problem asks "have I seen this before?", think **hash map**.
 - **Complexity:** Time O(n²), Space O(1)
 - **Why it's not enough:** For each `nums[i]` we **search the whole rest of the array** for its partner. That search is the bottleneck. If finding the partner were faster, the whole thing would be faster.
 
-## Approach 2: Better (Sort + Two Pointers)
+## Approach 2: Better (Sort + Binary Search)
+
+- **Idea:** Store `(value, index)` pairs and sort them by value. For each position `i`, compute `need = target - a[i].value` and binary-search for `need` only in the part **to the right of `i`** (`i + 1` to `n - 1`).
+- **Why it works:** Sorting lets us find any value in O(log n) instead of O(n). Searching only to the right means an element never matches itself, and no pair is missed: the left element of the answer pair always finds the right one.
+- **Code:** [better1.cpp](better1.cpp)
+- **Complexity:** Time O(n log n) (sort + `n` searches of O(log n) each), Space O(n) for the pairs
+- **Why it's not enough:** We start a fresh search for every element. But in a sorted array, as the left value grows, its partner can only get smaller, so the partner only moves left. Two pointers use this to find every partner in one O(n) scan.
+
+## Approach 3: Better (Sort + Two Pointers)
 
 - **Idea:** Store `(value, index)` pairs and sort them by value. Put `l` at the start and `r` at the end.
   - Sum too small → move `l` right (bigger value).
   - Sum too big → move `r` left (smaller value).
   - Sum equals target → return both original indices.
 - **Why it works:** In a sorted array, if `a[l] + a[r]` is too small, `a[l]` can't work with any value at or left of `r`, because those are all ≤ `a[r]`. So `a[l]` can be dropped safely. The same logic, flipped, drops `a[r]` when the sum is too big. Each step removes one candidate, and the answer is never thrown away.
-- **Code:** [better.cpp](better.cpp)
+- **Code:** [better2.cpp](better2.cpp)
 - **Complexity:** Time O(n log n) for sorting, Space O(n) for the pairs
-- **Why it's not enough:** Sorting costs O(n log n), and we need extra space to remember the original indices anyway. If we're using O(n) space, we can get O(n) time with a hash map.
+- **Why it's not enough:** The scan is O(n) now, but sorting still costs O(n log n), and we need extra space to remember the original indices anyway. If we're using O(n) space, we can get O(n) time with a hash map.
 
-## Approach 3: Optimal (One-Pass Hash Map)
+## Approach 4: Optimal (One-Pass Hash Map)
 
 - **Idea:** Walk the array once. For each `nums[i]`:
   1. Compute `need = target - nums[i]`.
@@ -103,17 +112,19 @@ At step 1, `3` needs another `3`. The map is still empty, so it does **not** mat
 
 - **Using the same element twice:** inserting `nums[i]` _before_ checking makes `[3, 2, 4], 6` return `[0, 0]`.
 - **Returning values instead of indices:** the problem asks for positions.
-- **Sorting `nums` directly in approach 2:** you lose the original indices. Sort `(value, index)` pairs instead.
+- **Sorting `nums` directly in approaches 2–3:** you lose the original indices. Sort `(value, index)` pairs instead.
+- **Binary-searching the whole array in approach 2:** with `[3, 2, 4], 6`, the `3` searches for `3` and finds itself. Search only from `i + 1`.
 - **Starting the inner loop at `j = 0`:** it checks pairs twice and pairs an element with itself. Start at `j = i + 1`.
 - **Assuming numbers are positive:** don't stop early when a value exceeds `target`. Negatives can bring the sum back down.
 
 ## Comparison
 
-| Approach            | Time       | Space | Note                                                                 |
-| ------------------- | ---------- | ----- | -------------------------------------------------------------------- |
-| Brute force         | O(n²)      | O(1)  | Simplest, slow for big inputs                                        |
-| Sort + two pointers | O(n log n) | O(n)  | Best if the array is **already sorted** (then O(n) time, O(1) space) |
-| Hash map            | **O(n)**   | O(n)  | Best in general                                                      |
+| Approach             | Time       | Space | Note                                                                 |
+| -------------------- | ---------- | ----- | -------------------------------------------------------------------- |
+| Brute force          | O(n²)      | O(1)  | Simplest, slow for big inputs                                        |
+| Sort + binary search | O(n log n) | O(n)  | Search per element drops from O(n) to O(log n)                       |
+| Sort + two pointers  | O(n log n) | O(n)  | Best if the array is **already sorted** (then O(n) time, O(1) space) |
+| Hash map             | **O(n)**   | O(n)  | Best in general                                                      |
 
 ## Pattern Takeaway
 
@@ -127,7 +138,7 @@ At step 1, `3` needs another `3`. The map is still empty, so it does **not** mat
 | ----------------------------------------------------------------------------------------------------- | ---------- | ------------------------------------------------------------- |
 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                               | Easy       | Same "have I seen it?" hash set idea                          |
 | [Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/)               | Easy       | Same complement idea, on a tree                               |
-| [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Medium     | Approach 2 with O(1) space, since the array is already sorted |
+| [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Medium     | Approach 3 with O(1) space, since the array is already sorted |
 | [3Sum](https://leetcode.com/problems/3sum/)                                                           | Medium     | Fix one number, then run Two Sum (two pointers) on the rest   |
 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)                         | Medium     | Same complement lookup, but on prefix sums                    |
 

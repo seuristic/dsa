@@ -20,45 +20,44 @@ Build `yt/NNN-problem-slug/` for one DSA problem. Goal: a student who reads the 
 
 Files:
 
-| File          | Audience     | Notes                                                      |
-| ------------- | ------------ | ---------------------------------------------------------- |
-| `README.md`   | Students     | Linked in the video description                            |
-| `video.md`    | Creator only | Recording script + YouTube metadata                        |
-| `brute.cpp`   | Both         | Simplest correct solution                                  |
-| `better.cpp`  | Both         | Only if a meaningful middle step exists; otherwise skip it |
-| `optimal.cpp` | Both         | Best known solution                                        |
+| File                            | Audience     | Notes                                                       |
+| ------------------------------- | ------------ | ----------------------------------------------------------- |
+| `README.md`                     | Students     | Linked in the video description                             |
+| `video.md`                      | Creator only | Recording script + YouTube metadata                         |
+| `brute.cpp`                     | Both         | Simplest correct solution                                   |
+| `better1.cpp`, `better2.cpp`, … | Both         | One file per meaningful middle step, in order; skip if none |
+| `optimal.cpp`                   | Both         | Best known solution                                         |
 
 ## 3. C++ files
 
 Match the repo style (`.clang-format`, Google-based, 2-space indent):
 
 ```cpp
-// <Approach name> — Time: O(...), Space: O(...)
-// Idea: <one or two lines>
 #include <bits/stdc++.h>
 using namespace std;
 
-// LeetCode: use `class Solution` with the exact official signature (students can paste it).
-// Otherwise: a plain function taking inputs as arguments and returning the answer.
+class Solution {
+public:
+  ...
+};
 
 int main() {
-  // Examples from the statement
-  assert(...);
-  // Edge cases
   assert(...);
   cout << "All tests passed\n";
 }
 ```
 
+- **No comments at all** in `.cpp` files — no header, no inline, no test labels. All explanation lives in the README.
+- LeetCode: `class Solution` with the exact official signature (students can paste it). Otherwise: a plain function taking inputs as arguments and returning the answer.
+- `main()` runs the statement's examples first, then edge cases.
 - Each file is self-contained and compiles on its own.
-- Comment the _why_ on non-obvious lines only — the README carries the explanation.
 - Same tests in every file so they can be compared on camera.
 - Use `long long` wherever sums/products can overflow.
 
 **Verify every file** with the user's `run` shell function (from `~/.zshrc`; compiles with `g++-15 -std=c++17 -O2 -Wall` and runs):
 
 ```
-cd yt/NNN-problem-slug && run brute.cpp && run optimal.cpp
+cd yt/NNN-problem-slug && for f in *.cpp; do run "$f"; done
 ```
 
 If `run` is unavailable, use `g++-15 -std=c++17 -O2 -Wall <file> -o a.out && ./a.out`. All files must print `All tests passed` with no warnings. For non-trivial optimal solutions, also stress-test optimal against brute on random small inputs in a scratch file (do not commit it).
@@ -101,11 +100,11 @@ Use these sections, in order. Keep each tight — bullets and tables over paragr
 - **Complexity:** Time O(…), Space O(…)
 - **Why it's not enough:** <the exact bottleneck → leads to next approach>
 
-## Approach 2: Better (only if better.cpp exists)
+## Approach 2: Better (one section per betterN.cpp, in order; skip if none)
 
 <same bullets>
 
-## Approach 3: Optimal
+## Approach N: Optimal
 
 <same bullets, minus "why it's not enough">
 
