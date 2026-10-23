@@ -1,5 +1,6 @@
 ---
 name: yt-problem
+argument-hint: <problem link | problem name | pasted statement>
 description: Generate a complete YouTube-ready problem folder in yt/ for a DSA problem — student README (problem, intuition, brute → optimal approaches, dry run, patterns, practice), a recording script (video.md), and tested C++ solutions. Use when the user shares a DSA problem (link, name, or pasted statement) and wants a video folder / notes / README for it, or says /yt-problem.
 ---
 
