@@ -1,7 +1,7 @@
 # 001. Two Sum
 
 **Difficulty:** Easy · **Tags:** array, hash map, binary search, two pointers
-**Problem:** [LeetCode 1](https://leetcode.com/problems/two-sum/) · **Video:** TODO
+**Problem:** [LeetCode 1](https://leetcode.com/problems/two-sum/) · **Video:** [YouTube](https://youtu.be/fTVYqq1hjaQ)
 
 ## Problem in Simple Words
 
