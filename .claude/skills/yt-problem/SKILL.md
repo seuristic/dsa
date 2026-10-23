@@ -1,7 +1,7 @@
 ---
 name: yt-problem
 argument-hint: <problem link | problem name | pasted statement>
-description: Generate a complete YouTube-ready problem folder in yt/ for a DSA problem — student README (problem, intuition, brute → optimal approaches, dry run, patterns, practice), a recording script (video.md), and tested C++ solutions. Use when the user shares a DSA problem (link, name, or pasted statement) and wants a video folder / notes / README for it, or says /yt-problem.
+description: Generate a complete YouTube-ready problem folder in yt/ for a DSA problem — student README (problem, intuition, brute → optimal approaches, dry run, patterns, practice), YouTube metadata (video.md: titles, description, thumbnail text), and tested C++ solutions. Use when the user shares a DSA problem (link, name, or pasted statement) and wants a video folder / notes / README for it, or says /yt-problem.
 ---
 
 # yt-problem
@@ -21,13 +21,13 @@ Build `yt/NNN-problem-slug/` for one DSA problem. Goal: a student who reads the 
 
 Files:
 
-| File                            | Audience     | Notes                                                       |
-| ------------------------------- | ------------ | ----------------------------------------------------------- |
-| `README.md`                     | Students     | Linked in the video description                             |
-| `video.md`                      | Creator only | Recording script + YouTube metadata                         |
-| `brute.cpp`                     | Both         | Simplest correct solution                                   |
-| `better1.cpp`, `better2.cpp`, … | Both         | One file per meaningful middle step, in order; skip if none |
-| `optimal.cpp`                   | Both         | Best known solution                                         |
+| File                                          | Audience     | Notes                                                       |
+| --------------------------------------------- | ------------ | ----------------------------------------------------------- |
+| `README.md`                                   | Students     | Linked in the video description                             |
+| `video.md`                                    | Creator only | Title options, YouTube description, thumbnail text          |
+| `brute.cpp`                                   | Both         | Simplest correct solution                                   |
+| `better.cpp`, `better2.cpp`, `better3.cpp`, … | Both         | One file per meaningful middle step, in order; skip if none |
+| `optimal.cpp`                                 | Both         | Best known solution                                         |
 
 ## 3. C++ files
 
@@ -101,7 +101,7 @@ Use these sections, in order. Keep each tight — bullets and tables over paragr
 - **Complexity:** Time O(…), Space O(…)
 - **Why it's not enough:** <the exact bottleneck → leads to next approach>
 
-## Approach 2: Better (one section per betterN.cpp, in order; skip if none)
+## Approach 2: Better (one section per better file: better.cpp, then better2.cpp, …; skip if none)
 
 <same bullets>
 
@@ -144,33 +144,44 @@ Use these sections, in order. Keep each tight — bullets and tables over paragr
 
 ## 5. video.md (creator-only)
 
-```markdown
+````markdown
 # Video: <Problem Title>
 
 ## Title Options
 
 <3 options, clear and searchable.>
 
-## Hook (first 30 sec)
-
-<What to say to make viewers stay — the problem's twist or why it matters.>
-
-## Recording Flow
-
-<Chapter by chapter, matching README order. For each: talking points (bullets) + what to draw on the whiteboard + which file to show.>
-
 ## YouTube Description
 
-<Short summary, chapter timestamps (00:00 placeholders), problem link, repo folder link.>
+```text
+<Title> (LeetCode <N>) explained step by step in C++, from <brute time> brute force to <optimal time> <optimal approach> solution.
 
-## Tags
+What you'll learn:
+• <Approach>: <idea in a few words>. <time> time, <space> space
+• <one bullet per approach, in README order>
+• <The key trap or insight>: <why it matters>
+• Edge cases: <short list>
+• The pattern: <signal> → <technique>
 
-<Comma-separated.>
+Problem: <LeetCode link>
+Notes + C++ code: https://github.com/seuristic/dsa/tree/main/yt/NNN-problem-slug
+Blind 75 list on LeetCode: https://leetcode.com/problem-list/027rn1u6/
+
+#leetcode #blind75 #dsa
+```
 
 ## Thumbnail Text
 
 <2–4 words.>
-```
+````
+
+YouTube description rules:
+
+- Inside a ` ```text ` block so it copies as-is. Plain text only (YouTube doesn't render markdown): `•` bullets, no bold or backticks.
+- No `<` or `>` anywhere — YouTube rejects the whole description ("Angled brackets aren't allowed"). Write `i before j`, `less than`, `at most` instead.
+- Full URLs, never shortened.
+- Not in the Blind 75 section of `yt/README.md` → drop the Blind 75 line and `#blind75`.
+- No chapter timestamps; the user adds those after recording.
 
 ## 6. Update the index
 

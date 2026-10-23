@@ -60,7 +60,7 @@ Whenever a problem asks "have I seen this before?", think **hash map**.
 
 - **Idea:** Store `(value, index)` pairs and sort them by value. For each position `i`, compute `need = target - a[i].value` and binary-search for `need` only in the part **to the right of `i`** (`i + 1` to `n - 1`).
 - **Why it works:** Sorting lets us find any value in O(log n) instead of O(n). Searching only to the right means an element never matches itself, and no pair is missed: the left element of the answer pair always finds the right one.
-- **Code:** [better1.cpp](better1.cpp)
+- **Code:** [better.cpp](better.cpp)
 - **Complexity:** Time O(n log n) (sort + `n` searches of O(log n) each), Space O(n) for the pairs
 - **Why it's not enough:** We start a fresh search for every element. But in a sorted array, as the left value grows, its partner can only get smaller, so the partner only moves left. Two pointers use this to find every partner in one O(n) scan.
 

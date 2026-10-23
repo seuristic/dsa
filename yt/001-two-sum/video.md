@@ -6,93 +6,26 @@
 2. Two Sum: The Hash Map Trick Every Beginner Must Know | Blind 75 #1
 3. LeetCode Two Sum — Brute Force, Binary Search, Two Pointers & Hash Map (C++)
 
-## Hook (first 30 sec)
-
-> "Two Sum is problem #1 on LeetCode and one of the most common warm-up questions in coding interviews.
-> Most beginners solve it in O(n²) and stop there. In this video, we'll go from O(n²) to O(n) with one simple question:
-> _'What number do I need right now?'_ That same question solves dozens of other problems too."
-
-## Recording Flow
-
-### 1. Problem (≈1 min)
-
-- Read the problem in simple words. Stress: **return indices**, **can't reuse the same element**, **exactly one answer**.
-- Whiteboard: draw `[2, 7, 11, 15]` with indices below, circle `2` and `7`.
-- Show example 2 (`[3, 2, 4]`, `6`) and point out why `[0, 0]` is wrong.
-
-### 2. Constraints (≈1 min)
-
-- n ≤ 10⁴ → O(n²) ≈ 5 × 10⁷: passes, but the follow-up wants better.
-- Negatives allowed. Sum fits in `int` (±2 × 10⁹ < 2.147 × 10⁹).
-
-### 3. Brute Force (≈2 min)
-
-- Whiteboard: an arrow from `i` and an arrow from `j` scanning everything after `i`.
-- Show [brute.cpp](brute.cpp), run it live.
-- Bottleneck: "for every number we **search** for its partner. Can the search be instant?"
-
-### 4. Better: Sort + Binary Search (≈3 min)
-
-- Whiteboard: the sorted `(value, index)` pairs. For one element, write `need`, then halve the range to the right of `i` step by step.
-- Point out why the search starts at `i + 1`: the `3 + 3` trap again.
-- Show [better1.cpp](better1.cpp), run it.
-- Why move on: a fresh search for every element. Partners only move left as `i` moves right, so can we scan just once?
-
-### 5. Better: Sort + Two Pointers (≈3 min)
-
-- Whiteboard: the sorted `(value, index)` pairs, with `l` at the left and `r` at the right.
-- Explain why moving a pointer never skips the answer (too small → `l++`, too big → `r--`).
-- Show [better2.cpp](better2.cpp), run it.
-- Why move on: the scan is O(n), but sorting still costs O(n log n), and we already use O(n) space.
-
-### 6. Key Insight (≈1 min)
-
-- "Standing at `x`, I need `target - x`." Write `need = target - x` big on the board.
-- "Have I seen it?" → hash map.
-
-### 7. Optimal: Hash Map (≈3 min)
-
-- Whiteboard: an array on top and a map box below. Fill the map step by step.
-- Do the dry run on `[3, 2, 4]`, `6` (README table).
-- Stress the **check before insert** order, using the `3 + 3` trap.
-- Show [optimal.cpp](optimal.cpp), run it.
-
-### 8. Edge Cases + Common Mistakes (≈1 min)
-
-- Duplicates `[3, 3]`, negatives, zeros. Mistake: inserting before checking.
-
-### 9. Comparison + Pattern (≈1 min)
-
-- Show the comparison table.
-- Pattern: "pair search → complement + hash map", "sorted array → two pointers".
-
-### 10. Follow-ups + Practice (≈1 min)
-
-- Sorted input → Two Sum II. Three numbers → 3Sum. Next video teaser.
-
 ## YouTube Description
 
-Two Sum (LeetCode 1) explained step by step in C++: brute force O(n²) → sort + binary search O(n log n) → sort + two pointers O(n log n) → hash map O(n). Learn the "complement" trick that solves dozens of interview problems.
+```text
+Two Sum (LeetCode 1) explained step by step in C++, from O(n²) brute force to an O(n) hash map solution.
 
-00:00 Intro
-00:00 Problem explained
-00:00 Constraints
-00:00 Brute force — O(n²)
-00:00 Sort + binary search — O(n log n)
-00:00 Sort + two pointers — O(n log n)
-00:00 Key insight
-00:00 Hash map — O(n)
-00:00 Dry run
-00:00 Edge cases & mistakes
-00:00 Pattern takeaway
-00:00 Follow-ups & practice
+What you'll learn:
+• Brute force: check every pair. O(n²) time, O(1) space
+• Sort + binary search: find each partner in O(log n). O(n log n) time, O(n) space
+• Sort + two pointers: find every partner in one scan. O(n log n) time, O(n) space
+• Hash map: one pass. O(n) time, O(n) space
+• The "3 + 3" trap: why we check the map before inserting
+• Edge cases: duplicates, negatives, zeros, extreme values
+• The pattern: pair search → complement + hash map
 
 Problem: https://leetcode.com/problems/two-sum/
-Notes + code: https://github.com/seuristic/dsa/tree/main/yt/001-two-sum
+Notes + C++ code: https://github.com/seuristic/dsa/tree/main/yt/001-two-sum
+Blind 75 list on LeetCode: https://leetcode.com/problem-list/027rn1u6/
 
-## Tags
-
-two sum, leetcode 1, two sum leetcode, two sum c++, hash map, unordered_map, binary search, two pointers, blind 75, leetcode easy, dsa for beginners, coding interview, data structures and algorithms
+#leetcode #blind75 #dsa
+```
 
 ## Thumbnail Text
 

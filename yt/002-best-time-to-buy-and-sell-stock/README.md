@@ -27,7 +27,7 @@ Note for example 1: the highest price is `7`, but it comes **before** the lowest
 What this means:
 
 - **n ≤ 10⁵:** checking every (buy, sell) pair is about 5 × 10⁹ checks. **Too slow** (time limit exceeded). We need O(n) or O(n log n).
-- **Only 1 day is possible:** you can't buy and sell on different days, so the answer is `0`.
+- **`prices.length` can be 1:** with a single day there is no later day to sell on, so the answer is `0`.
 - **Prices ≤ 10⁴:** any profit fits easily in `int`.
 - **Answer is never negative:** "not trading" is always an option, so start the answer at `0`.
 
@@ -63,7 +63,7 @@ We don't care _which_ day was cheapest, only _how cheap_ it was. So one number, 
   1. Build `minUpTo[i]` = cheapest price from day `0` to day `i`.
   2. For every day `i`, profit = `prices[i] - minUpTo[i]`. Keep the biggest.
 - **Why it works:** `minUpTo[i]` is exactly the best buy price for selling on day `i`. (Including day `i` itself just gives profit `0`, which is allowed.)
-- **Code:** [better1.cpp](better1.cpp)
+- **Code:** [better.cpp](better.cpp)
 - **Complexity:** Time O(n), Space O(n) for `minUpTo`
 - **Why it's not enough:** On day `i` we only ever read `minUpTo[i]`, never older entries. Storing the whole array is wasted memory. One variable can hold "cheapest so far".
 

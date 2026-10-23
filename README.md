@@ -21,7 +21,7 @@ yt/           one folder per video problem
 Each `yt/NNN-problem-slug/` folder has:
 
 - `README.md`: problem, intuition, brute force → optimal, dry run, patterns, practice
-- `video.md`: recording script and YouTube details
+- `video.md`: title options, YouTube description and thumbnail text
 - `brute.cpp`, `better.cpp`, `optimal.cpp`: tested solutions
 
 See the [index](yt/README.md). New folders are generated with the `/yt-problem` Claude Code skill.
