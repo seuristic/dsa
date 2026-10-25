@@ -8,8 +8,8 @@ New episode: run `/yt-problem <problem link, name, or statement>` in Claude Code
 | #   | Problem                                                                 | Topic               | Video                                 |
 | --- | ----------------------------------------------------------------------- | ------------------- | ------------------------------------- |
 | 001 | [Two Sum](001-two-sum/)                                                 | `array`, `hash map` | [Watch](https://youtu.be/fTVYqq1hjaQ) |
-| 002 | [Best Time to Buy and Sell Stock](002-best-time-to-buy-and-sell-stock/) | `array`, `greedy`   | TODO                                  |
-| 003 | [Contains Duplicate](003-contains-duplicate/)                           | `array`, `hash set` | TODO                                  |
+| 002 | [Best Time to Buy and Sell Stock](002-best-time-to-buy-and-sell-stock/) | `array`, `greedy`   | [Watch](https://youtu.be/FMtLPvhBLos) |
+| 003 | [Contains Duplicate](003-contains-duplicate/)                           | `array`, `hash set` | [Watch](https://youtu.be/BI9EpeAjRlM) |
 
 ## Blind 75
 

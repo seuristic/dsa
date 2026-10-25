@@ -2,7 +2,7 @@
 
 **Difficulty:** Easy · **Tags:** array, hash set, sorting
 
-**Problem:** [LeetCode 217](https://leetcode.com/problems/contains-duplicate/) · **Video:** TODO
+**Problem:** [LeetCode 217](https://leetcode.com/problems/contains-duplicate/) · **Video:** [YouTube](https://youtu.be/BI9EpeAjRlM)
 
 ## Problem in Simple Words
 

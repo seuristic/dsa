@@ -2,7 +2,7 @@
 
 **Difficulty:** Easy · **Tags:** array, greedy, prefix minimum
 
-**Problem:** [LeetCode 121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) · **Video:** TODO
+**Problem:** [LeetCode 121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) · **Video:** [YouTube](https://youtu.be/FMtLPvhBLos)
 
 ## Problem in Simple Words
 
