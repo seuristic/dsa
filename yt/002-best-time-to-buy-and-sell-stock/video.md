@@ -2,9 +2,9 @@
 
 ## Title Options
 
-1. Best Time to Buy and Sell Stock — O(n²) to O(n) | LeetCode 121 in C++
-2. Buy Low, Sell High: One Variable Solves It | Blind 75 #2
-3. LeetCode 121 Explained — Brute Force, Prefix Min & One Pass (C++)
+1. Best Time to Buy and Sell Stock: One Variable Solves It | Blind 75 #2
+2. Best Time to Buy and Sell Stock: Why Max − Min Is Wrong | Blind 75 #2
+3. Best Time to Buy and Sell Stock: Buy Low, Sell High in One Pass | Blind 75 #2
 
 ## YouTube Description
 

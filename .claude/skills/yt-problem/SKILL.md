@@ -149,7 +149,9 @@ Use these sections, in order. Keep each tight — bullets and tables over paragr
 
 ## Title Options
 
-<3 options, clear and searchable.>
+1. <Problem Title>: <what's unique about this problem> | Blind 75 #<N>
+2. <same format, different hook>
+3. <same format, different hook>
 
 ## YouTube Description
 
@@ -174,6 +176,13 @@ Blind 75 list on LeetCode: https://leetcode.com/problem-list/027rn1u6/
 
 <2–4 words.>
 ````
+
+Title rules:
+
+- Format: `<Problem Title>: <hook> | Blind 75 #<N>`, where `N` is the problem's `#` in the Blind 75 section of `yt/README.md`.
+- The hook is the one thing unique to this problem: its key trick, trap, or question (e.g. `Have You Seen This Number Before?`, `Why Max − Min Is Wrong`).
+- Not in Blind 75 → end with `| LeetCode <N>` instead.
+- At most 100 characters, no `<` or `>`.
 
 YouTube description rules:
 

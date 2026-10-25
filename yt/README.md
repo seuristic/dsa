@@ -9,6 +9,7 @@ New episode: run `/yt-problem <problem link, name, or statement>` in Claude Code
 | --- | ----------------------------------------------------------------------- | ------------------- | ------------------------------------- |
 | 001 | [Two Sum](001-two-sum/)                                                 | `array`, `hash map` | [Watch](https://youtu.be/fTVYqq1hjaQ) |
 | 002 | [Best Time to Buy and Sell Stock](002-best-time-to-buy-and-sell-stock/) | `array`, `greedy`   | TODO                                  |
+| 003 | [Contains Duplicate](003-contains-duplicate/)                           | `array`, `hash set` | TODO                                  |
 
 ## Blind 75
 
@@ -18,7 +19,7 @@ The classic 75 LeetCode problems that cover the core interview patterns. Premium
 | --- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- | ---------- | ------------------------------------------- |
 | 1   | [Two Sum](https://leetcode.com/problems/two-sum/)                                                                                                     | `array`, `hash map`           | Easy       | [001](001-two-sum/)                         |
 | 2   | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)                                                     | `array`, `greedy`             | Easy       | [002](002-best-time-to-buy-and-sell-stock/) |
-| 3   | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                                                                               | `array`, `hash set`           | Easy       | —                                           |
+| 3   | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                                                                               | `array`, `hash set`           | Easy       | [003](003-contains-duplicate/)              |
 | 4   | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)                                                           | `array`, `prefix sum`         | Medium     | —                                           |
 | 5   | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)                                                                                   | `array`, `kadane`             | Medium     | —                                           |
 | 6   | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)                                                                   | `array`, `dp`                 | Medium     | —                                           |

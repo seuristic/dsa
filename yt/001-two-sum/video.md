@@ -2,9 +2,9 @@
 
 ## Title Options
 
-1. Two Sum — From O(n²) to O(n) | LeetCode 1 Explained in C++
-2. Two Sum: The Hash Map Trick Every Beginner Must Know | Blind 75 #1
-3. LeetCode Two Sum — Brute Force, Binary Search, Two Pointers & Hash Map (C++)
+1. Two Sum: The Hash Map Trick Every Beginner Must Know | Blind 75 #1
+2. Two Sum: Find the Pair in One Pass | Blind 75 #1
+3. Two Sum: 4 Ways from O(n²) to O(n) | Blind 75 #1
 
 ## YouTube Description
 
