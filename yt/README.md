@@ -10,7 +10,8 @@ New episode: run `/yt-problem <problem link, name, or statement>` in Claude Code
 | 001 | [Two Sum](001-two-sum/)                                                 | `array`, `hash map`   | [Watch](https://youtu.be/fTVYqq1hjaQ) |
 | 002 | [Best Time to Buy and Sell Stock](002-best-time-to-buy-and-sell-stock/) | `array`, `greedy`     | [Watch](https://youtu.be/FMtLPvhBLos) |
 | 003 | [Contains Duplicate](003-contains-duplicate/)                           | `array`, `hash set`   | [Watch](https://youtu.be/BI9EpeAjRlM) |
-| 004 | [Product of Array Except Self](004-product-of-array-except-self/)       | `array`, `prefix sum` | TODO                                  |
+| 004 | [Product of Array Except Self](004-product-of-array-except-self/)       | `array`, `prefix sum` | [Watch](https://youtu.be/QBfYD1D2ZQE) |
+| 005 | [Maximum Subarray](005-maximum-subarray/)                               | `array`, `kadane`     | [Watch](https://youtu.be/8K4adjGnJTw) |
 
 ## Blind 75
 
@@ -22,7 +23,7 @@ The classic 75 LeetCode problems that cover the core interview patterns. Premium
 | 2   | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)                                                     | `array`, `greedy`             | Easy       | [002](002-best-time-to-buy-and-sell-stock/) |
 | 3   | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                                                                               | `array`, `hash set`           | Easy       | [003](003-contains-duplicate/)              |
 | 4   | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)                                                           | `array`, `prefix sum`         | Medium     | [004](004-product-of-array-except-self/)    |
-| 5   | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)                                                                                   | `array`, `kadane`             | Medium     | —                                           |
+| 5   | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)                                                                                   | `array`, `kadane`             | Medium     | [005](005-maximum-subarray/)                |
 | 6   | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)                                                                   | `array`, `dp`                 | Medium     | —                                           |
 | 7   | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)                                           | `array`, `binary search`      | Medium     | —                                           |
 | 8   | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)                                                       | `array`, `binary search`      | Medium     | —                                           |

@@ -2,7 +2,7 @@
 
 **Difficulty:** Medium · **Tags:** array, prefix sum (prefix product)
 
-**Problem:** [LeetCode 238](https://leetcode.com/problems/product-of-array-except-self/) · **Video:** TODO
+**Problem:** [LeetCode 238](https://leetcode.com/problems/product-of-array-except-self/) · **Video:** [YouTube](https://youtu.be/QBfYD1D2ZQE)
 
 ## Problem in Simple Words
 
