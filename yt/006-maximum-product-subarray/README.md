@@ -2,7 +2,7 @@
 
 **Difficulty:** Medium · **Tags:** array, dynamic programming
 
-**Problem:** [LeetCode 152](https://leetcode.com/problems/maximum-product-subarray/) · **Video:** TODO
+**Problem:** [LeetCode 152](https://leetcode.com/problems/maximum-product-subarray/) · **Video:** [YouTube](https://youtu.be/phaJxZbLyPE)
 
 ## Problem in Simple Words
 
