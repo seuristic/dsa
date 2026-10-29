@@ -35,7 +35,7 @@ What this means:
 ## Prerequisites
 
 - **Binary search:** cut the search range in half every step using one comparison. O(log n).
-- **`mid = lo + (hi - lo) / 2`:** the middle index without overflow.
+- **`mid = left + (right - left) / 2`:** the middle index without overflow.
 
 ## How to Think About It
 
@@ -58,9 +58,9 @@ value
 - A rotated sorted array is **two sorted parts**. Every number in the left part is **bigger** than every number in the right part.
 - The minimum is the **first number of the right part**.
 - So the question is: _"Is `mid` in the left part or the right part?"_
-- Compare `nums[mid]` with the **last number**, `nums[hi]`:
-  - `nums[mid] > nums[hi]` → `mid` is in the left (bigger) part. The minimum is **to the right** of `mid`.
-  - `nums[mid] < nums[hi]` → `mid` is in the right part. The minimum is `mid` **or to its left**.
+- Compare `nums[mid]` with the **last number**, `nums[right]`:
+  - `nums[mid] > nums[right]` → `mid` is in the left (bigger) part. The minimum is **to the right** of `mid`.
+  - `nums[mid] < nums[right]` → `mid` is in the right part. The minimum is `mid` **or to its left**.
 
 One comparison throws away half the array. That's binary search.
 
@@ -74,16 +74,16 @@ One comparison throws away half the array. That's binary search.
 
 ## Approach 2: Optimal (Binary Search)
 
-- **Idea:** Keep `lo = 0`, `hi = n - 1`. While `lo < hi`:
-  1. `mid = lo + (hi - lo) / 2`.
-  2. If `nums[mid] > nums[hi]` → the minimum is right of `mid`: `lo = mid + 1`.
-  3. Else → the minimum is `mid` or left of it: `hi = mid`.
+- **Idea:** Keep `left = 0`, `right = n - 1`. While `left < right`:
+  1. `mid = left + (right - left) / 2`.
+  2. If `nums[mid] > nums[right]` → the minimum is right of `mid`: `left = mid + 1`.
+  3. Else → the minimum is `mid` or left of it: `right = mid`.
 
-  When `lo == hi`, that's the minimum.
+  When `left == right`, that's the minimum.
 
-- **Why it works:** The minimum always stays inside `[lo, hi]`:
-  - If `nums[mid] > nums[hi]`, there's a drop somewhere after `mid`, so `mid` isn't the minimum. Skip it.
-  - Otherwise `mid` to `hi` is sorted, so nothing after `mid` is smaller. But `mid` might be the minimum, so keep it (`hi = mid`, not `mid - 1`).
+- **Why it works:** The minimum always stays inside `[left, right]`:
+  - If `nums[mid] > nums[right]`, there's a drop somewhere after `mid`, so `mid` isn't the minimum. Skip it.
+  - Otherwise `mid` to `right` is sorted, so nothing after `mid` is smaller. But `mid` might be the minimum, so keep it (`right = mid`, not `mid - 1`).
   - The range shrinks every step, so the loop ends.
 - **Code:** [optimal.cpp](optimal.cpp)
 - **Complexity:** Time O(log n), Space O(1)
@@ -92,31 +92,31 @@ One comparison throws away half the array. That's binary search.
 
 `nums = [4, 5, 6, 7, 0, 1, 2]`
 
-| `lo` | `hi` | `mid` | `nums[mid]` | `nums[hi]` | Decision                          |
-| ---- | ---- | ----- | ----------- | ---------- | --------------------------------- |
-| 0    | 6    | 3     | 7           | 2          | `7 > 2` → go right: `lo = 4`      |
-| 4    | 6    | 5     | 1           | 2          | `1 < 2` → keep `mid`: `hi = 5`    |
-| 4    | 5    | 4     | 0           | 1          | `0 < 1` → keep `mid`: `hi = 4`    |
-| 4    | 4    | —     | —           | —          | `lo == hi` → return `nums[4] = 0` |
+| `left` | `right` | `mid` | `nums[mid]` | `nums[right]` | Decision                               |
+| ------ | ------- | ----- | ----------- | ------------- | -------------------------------------- |
+| 0      | 6       | 3     | 7           | 2             | `7 > 2` → go right: `left = 4`         |
+| 4      | 6       | 5     | 1           | 2             | `1 < 2` → keep `mid`: `right = 5`      |
+| 4      | 5       | 4     | 0           | 1             | `0 < 1` → keep `mid`: `right = 4`      |
+| 4      | 4       | —     | —           | —             | `left == right` → return `nums[4] = 0` |
 
 ## Edge Cases
 
-| Case                 | Example                | What happens                                          |
-| -------------------- | ---------------------- | ----------------------------------------------------- |
-| Not rotated          | `[11, 13, 15, 17]`     | `nums[mid] < nums[hi]` every time → `hi` walks to `0` |
-| One number           | `[1]`                  | Loop never runs → `nums[0]`                           |
-| Two numbers, rotated | `[2, 1]`               | `2 > 1` → `lo = 1` → `1`                              |
-| Two numbers, sorted  | `[1, 2]`               | `1 < 2` → `hi = 0` → `1`                              |
-| Minimum at index 1   | `[5, 1, 2, 3, 4]`      | Binary search narrows down to index 1                 |
-| Minimum at the end   | `[2, 3, 4, 5, 1]`      | Keeps going right → last index                        |
-| Negative numbers     | `[0, 5000, -5000, -1]` | Works the same → `-5000`                              |
+| Case                 | Example                | What happens                                                |
+| -------------------- | ---------------------- | ----------------------------------------------------------- |
+| Not rotated          | `[11, 13, 15, 17]`     | `nums[mid] < nums[right]` every time → `right` walks to `0` |
+| One number           | `[1]`                  | Loop never runs → `nums[0]`                                 |
+| Two numbers, rotated | `[2, 1]`               | `2 > 1` → `left = 1` → `1`                                  |
+| Two numbers, sorted  | `[1, 2]`               | `1 < 2` → `right = 0` → `1`                                 |
+| Minimum at index 1   | `[5, 1, 2, 3, 4]`      | Binary search narrows down to index 1                       |
+| Minimum at the end   | `[2, 3, 4, 5, 1]`      | Keeps going right → last index                              |
+| Negative numbers     | `[0, 5000, -5000, -1]` | Works the same → `-5000`                                    |
 
 ## Common Mistakes
 
-- **Comparing with `nums[lo]` instead of `nums[hi]`:** on a sorted array like `[1, 2, 3, 4, 5]`, `nums[mid] > nums[lo]` sends you right, away from the minimum. Comparing with `nums[hi]` works in every case.
-- **`hi = mid - 1`:** `mid` might be the minimum. Dropping it loses the answer. Use `hi = mid`.
-- **`while (lo <= hi)` with `hi = mid`:** when `lo == hi`, nothing changes and the loop never ends. Use `lo < hi`.
-- **`mid = (lo + hi) / 2`:** fine here (n ≤ 5000), but `lo + (hi - lo) / 2` is the habit that never overflows.
+- **Comparing with `nums[left]` instead of `nums[right]`:** on a sorted array like `[1, 2, 3, 4, 5]`, `nums[mid] > nums[left]` sends you right, away from the minimum. Comparing with `nums[right]` works in every case.
+- **`right = mid - 1`:** `mid` might be the minimum. Dropping it loses the answer. Use `right = mid`.
+- **`while (left <= right)` with `right = mid`:** when `left == right`, nothing changes and the loop never ends. Use `left < right`.
+- **`mid = (left + right) / 2`:** fine here (n ≤ 5000), but `left + (right - left) / 2` is the habit that never overflows.
 
 ## Comparison
 
@@ -129,7 +129,7 @@ One comparison throws away half the array. That's binary search.
 
 - **"Sorted but rotated" → still binary search.** One side of `mid` is always sorted.
 - **Binary search on a condition, not a value:** here the question is "is `mid` in the left part?". The answer is `yes, yes, …, no, no` across the array. Binary search finds where it flips.
-- **`lo < hi` with `hi = mid`** is the template for "find the first index where something becomes true".
+- **`left < right` with `right = mid`** is the template for "find the first index where something becomes true".
 
 ## Practice Next
 
@@ -142,14 +142,14 @@ One comparison throws away half the array. That's binary search.
 
 ## Interview Follow-ups
 
-- **"How many times was it rotated?"** → The index of the minimum, `lo`. (For `[4, 5, 6, 7, 0, 1, 2]`, that's 4.)
-- **"Find the maximum."** → It's just before the minimum: `nums[(lo - 1 + n) % n]`.
-- **"What if there are duplicates?"** → When `nums[mid] == nums[hi]`, you can't tell which part `mid` is in. Do `hi--` (safe, since `nums[mid]` still holds the same value). Worst case becomes O(n), e.g. `[1, 1, 1, 0, 1]`.
+- **"How many times was it rotated?"** → The index of the minimum, `left`. (For `[4, 5, 6, 7, 0, 1, 2]`, that's 4.)
+- **"Find the maximum."** → It's just before the minimum: `nums[(left - 1 + n) % n]`.
+- **"What if there are duplicates?"** → When `nums[mid] == nums[right]`, you can't tell which part `mid` is in. Do `right--` (safe, since `nums[mid]` still holds the same value). Worst case becomes O(n), e.g. `[1, 1, 1, 0, 1]`.
 - **"Search for a target instead?"** → Find which half of `mid` is sorted, check if the target falls in it, and go that way. That's Search in Rotated Sorted Array.
 
 ## TL;DR
 
 - Rotated sorted = two sorted parts. The minimum starts the right part.
-- `nums[mid] > nums[hi]` → `lo = mid + 1`. Otherwise → `hi = mid`.
-- Loop while `lo < hi`. Answer is `nums[lo]`.
+- `nums[mid] > nums[right]` → `left = mid + 1`. Otherwise → `right = mid`.
+- Loop while `left < right`. Answer is `nums[left]`.
 - O(log n) time, O(1) space.

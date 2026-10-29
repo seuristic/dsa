@@ -15,7 +15,7 @@ What you'll learn:
 • Brute force: scan every number. O(n) time, O(1) space
 • Binary search: compare mid with the last number to find which part it's in. O(log n) time, O(1) space
 • Why compare with the last number, not the first: the first breaks on an array that isn't rotated
-• Why hi = mid, not mid - 1: mid itself might be the minimum
+• Why right = mid, not mid - 1: mid itself might be the minimum
 • Edge cases: not rotated, one number, two numbers, minimum at the end
 • The pattern: sorted but rotated → binary search on which part mid is in
 

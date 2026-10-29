@@ -54,6 +54,7 @@ int main() {
 - Each file is self-contained and compiles on its own.
 - Same tests in every file so they can be compared on camera.
 - Use `long long` wherever sums/products can overflow.
+- Index pointers (binary search, two pointers) are `left`, `right`, `mid` — never `lo`/`hi`/`low`/`high`, which read like values. Use the same names in the README.
 
 **Verify every file** with the user's `run` shell function (from `~/.zshrc`; compiles with `g++-15 -std=c++17 -O2 -Wall` and runs):
 
