@@ -13,7 +13,7 @@ New episode: run `/yt-problem <problem link, name, or statement>` in Claude Code
 | 004 | [Product of Array Except Self](004-product-of-array-except-self/)                 | `array`, `prefix sum`    | [Watch](https://youtu.be/QBfYD1D2ZQE) |
 | 005 | [Maximum Subarray](005-maximum-subarray/)                                         | `array`, `kadane`        | [Watch](https://youtu.be/8K4adjGnJTw) |
 | 006 | [Maximum Product Subarray](006-maximum-product-subarray/)                         | `array`, `dp`            | [Watch](https://youtu.be/phaJxZbLyPE) |
-| 007 | [Find Minimum in Rotated Sorted Array](007-find-minimum-in-rotated-sorted-array/) | `array`, `binary search` | TODO                                  |
+| 007 | [Find Minimum in Rotated Sorted Array](007-find-minimum-in-rotated-sorted-array/) | `array`, `binary search` | [Watch](https://youtu.be/1D_HUjB_xbc) |
 | 008 | [Search in Rotated Sorted Array](008-search-in-rotated-sorted-array/)             | `array`, `binary search` | TODO                                  |
 
 ## Blind 75

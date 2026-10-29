@@ -2,7 +2,7 @@
 
 **Difficulty:** Medium · **Tags:** array, binary search
 
-**Problem:** [LeetCode 153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) · **Video:** TODO
+**Problem:** [LeetCode 153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) · **Video:** [YouTube](https://youtu.be/1D_HUjB_xbc)
 
 ## Problem in Simple Words
 
