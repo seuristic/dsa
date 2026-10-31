@@ -64,7 +64,9 @@ sorted: [-4, -1, -1, 0, 1, 2]
 - **Idea:** Try every triplet `i < j < k`. If the sum is `0`, sort the three numbers and put them in a `set` (which removes duplicates).
 - **Why it works:** Every triplet is checked. Sorting each one makes `[-1, 0, 1]` and `[0, 1, -1]` look the same, so the `set` keeps only one.
 - **Code:** [brute.cpp](brute.cpp)
-- **Complexity:** Time O(n³), Space O(k) for the `set`, where `k` is the number of triplets found
+- **Complexity:** Time O(n³ · log n), Space O(k) for the `set`, where `k` is the number of distinct triplets
+  - Three nested loops: O(n³) triplets.
+  - Each match is inserted into the `set`, which costs O(log k). In the worst case almost every triplet matches, and `k` can be up to n² (two values fix the third), so log k = O(log n).
 - **Why it's not enough:** The third loop just searches for one value: `-(nums[i] + nums[j])`. Searching for a value is what a hash set does in O(1).
 
 ## Approach 2: Better (Hash Set)
@@ -130,7 +132,7 @@ Result: `[[-1, -1, 2], [-1, 0, 1]]`.
 
 | Approach            | Time          | Space (extra) | Note                                  |
 | ------------------- | ------------- | ------------- | ------------------------------------- |
-| Brute force         | O(n³)         | O(k)          | Too slow for n = 3000                 |
+| Brute force         | O(n³ · log n) | O(k)          | Too slow for n = 3000                 |
 | Hash set            | O(n² · log n) | O(n + k)      | Two Sum with a hash set for each `i`  |
 | Sort + two pointers | **O(n²)**     | **O(1)**      | Sorting makes duplicates easy to skip |
 

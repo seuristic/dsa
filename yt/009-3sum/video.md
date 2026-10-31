@@ -9,10 +9,10 @@
 ## YouTube Description
 
 ```text
-3Sum (LeetCode 15) explained step by step in C++, from O(n³) brute force to an O(n²) sort + two pointers solution.
+3Sum (LeetCode 15) explained step by step in C++, from O(n³ log n) brute force to an O(n²) sort + two pointers solution.
 
 What you'll learn:
-• Brute force: try every triplet, remove duplicates with a set. O(n³) time
+• Brute force: try every triplet, remove duplicates with a set. O(n³ log n) time
 • Hash set: fix one number, then Two Sum with a hash set. O(n² log n) time, O(n) space
 • Sort + two pointers: fix one number, move left and right toward each other. O(n²) time, O(1) extra space
 • Skipping duplicates: why we compare with the previous number, not the next one
