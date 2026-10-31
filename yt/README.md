@@ -14,7 +14,8 @@ New episode: run `/yt-problem <problem link, name, or statement>` in Claude Code
 | 005 | [Maximum Subarray](005-maximum-subarray/)                                         | `array`, `kadane`        | [Watch](https://youtu.be/8K4adjGnJTw) |
 | 006 | [Maximum Product Subarray](006-maximum-product-subarray/)                         | `array`, `dp`            | [Watch](https://youtu.be/phaJxZbLyPE) |
 | 007 | [Find Minimum in Rotated Sorted Array](007-find-minimum-in-rotated-sorted-array/) | `array`, `binary search` | [Watch](https://youtu.be/1D_HUjB_xbc) |
-| 008 | [Search in Rotated Sorted Array](008-search-in-rotated-sorted-array/)             | `array`, `binary search` | TODO                                  |
+| 008 | [Search in Rotated Sorted Array](008-search-in-rotated-sorted-array/)             | `array`, `binary search` | [Watch](https://youtu.be/b36SNP0jvUo) |
+| 009 | [3Sum](009-3sum/)                                                                 | `array`, `two pointers`  | TODO                                  |
 
 ## Blind 75
 
@@ -30,7 +31,7 @@ The classic 75 LeetCode problems that cover the core interview patterns. Premium
 | 6   | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)                                                                   | `array`, `dp`                 | Medium     | [006](006-maximum-product-subarray/)             |
 | 7   | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)                                           | `array`, `binary search`      | Medium     | [007](007-find-minimum-in-rotated-sorted-array/) |
 | 8   | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)                                                       | `array`, `binary search`      | Medium     | [008](008-search-in-rotated-sorted-array/)       |
-| 9   | [3Sum](https://leetcode.com/problems/3sum/)                                                                                                           | `array`, `two pointers`       | Medium     | —                                                |
+| 9   | [3Sum](https://leetcode.com/problems/3sum/)                                                                                                           | `array`, `two pointers`       | Medium     | [009](009-3sum/)                                 |
 | 10  | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)                                                                 | `array`, `two pointers`       | Medium     | —                                                |
 | 11  | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)                                                                             | `bit manipulation`            | Medium     | —                                                |
 | 12  | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)                                                                                   | `bit manipulation`            | Easy       | —                                                |

@@ -2,7 +2,7 @@
 
 **Difficulty:** Medium · **Tags:** array, binary search
 
-**Problem:** [LeetCode 33](https://leetcode.com/problems/search-in-rotated-sorted-array/) · **Video:** TODO
+**Problem:** [LeetCode 33](https://leetcode.com/problems/search-in-rotated-sorted-array/) · **Video:** [YouTube](https://youtu.be/b36SNP0jvUo)
 
 ## Problem in Simple Words
 
