@@ -2,7 +2,7 @@
 
 **Difficulty:** Medium · **Tags:** array, two pointers, sorting
 
-**Problem:** [LeetCode 15](https://leetcode.com/problems/3sum/) · **Video:** TODO
+**Problem:** [LeetCode 15](https://leetcode.com/problems/3sum/) · **Video:** [YouTube](https://youtu.be/UwNn6ADY_XU)
 
 ## Problem in Simple Words
 

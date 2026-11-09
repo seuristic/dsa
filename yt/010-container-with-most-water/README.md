@@ -2,7 +2,7 @@
 
 **Difficulty:** Medium · **Tags:** array, two pointers, greedy
 
-**Problem:** [LeetCode 11](https://leetcode.com/problems/container-with-most-water/) · **Video:** TODO
+**Problem:** [LeetCode 11](https://leetcode.com/problems/container-with-most-water/) · **Video:** [YouTube](https://youtu.be/_Mv4fu6HbsI)
 
 ## Problem in Simple Words
 

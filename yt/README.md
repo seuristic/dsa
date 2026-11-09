@@ -15,8 +15,9 @@ New episode: run `/yt-problem <problem link, name, or statement>` in Claude Code
 | 006 | [Maximum Product Subarray](006-maximum-product-subarray/)                         | `array`, `dp`            | [Watch](https://youtu.be/phaJxZbLyPE) |
 | 007 | [Find Minimum in Rotated Sorted Array](007-find-minimum-in-rotated-sorted-array/) | `array`, `binary search` | [Watch](https://youtu.be/1D_HUjB_xbc) |
 | 008 | [Search in Rotated Sorted Array](008-search-in-rotated-sorted-array/)             | `array`, `binary search` | [Watch](https://youtu.be/b36SNP0jvUo) |
-| 009 | [3Sum](009-3sum/)                                                                 | `array`, `two pointers`  | TODO                                  |
-| 010 | [Container With Most Water](010-container-with-most-water/)                       | `array`, `two pointers`  | TODO                                  |
+| 009 | [3Sum](009-3sum/)                                                                 | `array`, `two pointers`  | [Watch](https://youtu.be/UwNn6ADY_XU) |
+| 010 | [Container With Most Water](010-container-with-most-water/)                       | `array`, `two pointers`  | [Watch](https://youtu.be/_Mv4fu6HbsI) |
+| 011 | [Sum of Two Integers](011-sum-of-two-integers/)                                   | `bit manipulation`       | TODO                                  |
 
 ## Blind 75
 
@@ -34,7 +35,7 @@ The classic 75 LeetCode problems that cover the core interview patterns. Premium
 | 8   | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)                                                       | `array`, `binary search`      | Medium     | [008](008-search-in-rotated-sorted-array/)       |
 | 9   | [3Sum](https://leetcode.com/problems/3sum/)                                                                                                           | `array`, `two pointers`       | Medium     | [009](009-3sum/)                                 |
 | 10  | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)                                                                 | `array`, `two pointers`       | Medium     | [010](010-container-with-most-water/)            |
-| 11  | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)                                                                             | `bit manipulation`            | Medium     | —                                                |
+| 11  | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)                                                                             | `bit manipulation`            | Medium     | [011](011-sum-of-two-integers/)                  |
 | 12  | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)                                                                                   | `bit manipulation`            | Easy       | —                                                |
 | 13  | [Counting Bits](https://leetcode.com/problems/counting-bits/)                                                                                         | `bit manipulation`, `dp`      | Easy       | —                                                |
 | 14  | [Missing Number](https://leetcode.com/problems/missing-number/)                                                                                       | `bit manipulation`, `math`    | Easy       | —                                                |
