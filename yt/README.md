@@ -19,6 +19,7 @@ New episode: run `/yt-problem <problem link, name, or statement>` in Claude Code
 | 010 | [Container With Most Water](010-container-with-most-water/)                       | `array`, `two pointers`  | [Watch](https://youtu.be/_Mv4fu6HbsI) |
 | 011 | [Sum of Two Integers](011-sum-of-two-integers/)                                   | `bit manipulation`       | TODO                                  |
 | 012 | [Number of 1 Bits](012-number-of-1-bits/)                                         | `bit manipulation`       | TODO                                  |
+| 013 | [Counting Bits](013-counting-bits/)                                               | `bit manipulation`, `dp` | TODO                                  |
 
 ## Blind 75
 
@@ -38,7 +39,7 @@ The classic 75 LeetCode problems that cover the core interview patterns. Premium
 | 10  | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)                                                                 | `array`, `two pointers`       | Medium     | [010](010-container-with-most-water/)            |
 | 11  | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)                                                                             | `bit manipulation`            | Medium     | [011](011-sum-of-two-integers/)                  |
 | 12  | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)                                                                                   | `bit manipulation`            | Easy       | [012](012-number-of-1-bits/)                     |
-| 13  | [Counting Bits](https://leetcode.com/problems/counting-bits/)                                                                                         | `bit manipulation`, `dp`      | Easy       | —                                                |
+| 13  | [Counting Bits](https://leetcode.com/problems/counting-bits/)                                                                                         | `bit manipulation`, `dp`      | Easy       | [013](013-counting-bits/)                        |
 | 14  | [Missing Number](https://leetcode.com/problems/missing-number/)                                                                                       | `bit manipulation`, `math`    | Easy       | —                                                |
 | 15  | [Reverse Bits](https://leetcode.com/problems/reverse-bits/)                                                                                           | `bit manipulation`            | Easy       | —                                                |
 | 16  | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                                                                                     | `dp`                          | Easy       | —                                                |
