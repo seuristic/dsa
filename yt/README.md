@@ -5,21 +5,22 @@ New episode: run `/yt-problem <problem link, name, or statement>` in Claude Code
 
 ## Episodes
 
-| #   | Problem                                                                           | Topic                    | Video                                 |
-| --- | --------------------------------------------------------------------------------- | ------------------------ | ------------------------------------- |
-| 001 | [Two Sum](001-two-sum/)                                                           | `array`, `hash map`      | [Watch](https://youtu.be/fTVYqq1hjaQ) |
-| 002 | [Best Time to Buy and Sell Stock](002-best-time-to-buy-and-sell-stock/)           | `array`, `greedy`        | [Watch](https://youtu.be/FMtLPvhBLos) |
-| 003 | [Contains Duplicate](003-contains-duplicate/)                                     | `array`, `hash set`      | [Watch](https://youtu.be/BI9EpeAjRlM) |
-| 004 | [Product of Array Except Self](004-product-of-array-except-self/)                 | `array`, `prefix sum`    | [Watch](https://youtu.be/QBfYD1D2ZQE) |
-| 005 | [Maximum Subarray](005-maximum-subarray/)                                         | `array`, `kadane`        | [Watch](https://youtu.be/8K4adjGnJTw) |
-| 006 | [Maximum Product Subarray](006-maximum-product-subarray/)                         | `array`, `dp`            | [Watch](https://youtu.be/phaJxZbLyPE) |
-| 007 | [Find Minimum in Rotated Sorted Array](007-find-minimum-in-rotated-sorted-array/) | `array`, `binary search` | [Watch](https://youtu.be/1D_HUjB_xbc) |
-| 008 | [Search in Rotated Sorted Array](008-search-in-rotated-sorted-array/)             | `array`, `binary search` | [Watch](https://youtu.be/b36SNP0jvUo) |
-| 009 | [3Sum](009-3sum/)                                                                 | `array`, `two pointers`  | [Watch](https://youtu.be/UwNn6ADY_XU) |
-| 010 | [Container With Most Water](010-container-with-most-water/)                       | `array`, `two pointers`  | [Watch](https://youtu.be/_Mv4fu6HbsI) |
-| 011 | [Sum of Two Integers](011-sum-of-two-integers/)                                   | `bit manipulation`       | TODO                                  |
-| 012 | [Number of 1 Bits](012-number-of-1-bits/)                                         | `bit manipulation`       | TODO                                  |
-| 013 | [Counting Bits](013-counting-bits/)                                               | `bit manipulation`, `dp` | TODO                                  |
+| #   | Problem                                                                           | Topic                       | Video                                 |
+| --- | --------------------------------------------------------------------------------- | --------------------------- | ------------------------------------- |
+| 001 | [Two Sum](001-two-sum/)                                                           | `array`, `hash map`         | [Watch](https://youtu.be/fTVYqq1hjaQ) |
+| 002 | [Best Time to Buy and Sell Stock](002-best-time-to-buy-and-sell-stock/)           | `array`, `greedy`           | [Watch](https://youtu.be/FMtLPvhBLos) |
+| 003 | [Contains Duplicate](003-contains-duplicate/)                                     | `array`, `hash set`         | [Watch](https://youtu.be/BI9EpeAjRlM) |
+| 004 | [Product of Array Except Self](004-product-of-array-except-self/)                 | `array`, `prefix sum`       | [Watch](https://youtu.be/QBfYD1D2ZQE) |
+| 005 | [Maximum Subarray](005-maximum-subarray/)                                         | `array`, `kadane`           | [Watch](https://youtu.be/8K4adjGnJTw) |
+| 006 | [Maximum Product Subarray](006-maximum-product-subarray/)                         | `array`, `dp`               | [Watch](https://youtu.be/phaJxZbLyPE) |
+| 007 | [Find Minimum in Rotated Sorted Array](007-find-minimum-in-rotated-sorted-array/) | `array`, `binary search`    | [Watch](https://youtu.be/1D_HUjB_xbc) |
+| 008 | [Search in Rotated Sorted Array](008-search-in-rotated-sorted-array/)             | `array`, `binary search`    | [Watch](https://youtu.be/b36SNP0jvUo) |
+| 009 | [3Sum](009-3sum/)                                                                 | `array`, `two pointers`     | [Watch](https://youtu.be/UwNn6ADY_XU) |
+| 010 | [Container With Most Water](010-container-with-most-water/)                       | `array`, `two pointers`     | [Watch](https://youtu.be/_Mv4fu6HbsI) |
+| 011 | [Sum of Two Integers](011-sum-of-two-integers/)                                   | `bit manipulation`          | TODO                                  |
+| 012 | [Number of 1 Bits](012-number-of-1-bits/)                                         | `bit manipulation`          | TODO                                  |
+| 013 | [Counting Bits](013-counting-bits/)                                               | `bit manipulation`, `dp`    | TODO                                  |
+| 014 | [Missing Number](014-missing-number/)                                             | `array`, `bit manipulation` | TODO                                  |
 
 ## Blind 75
 
@@ -40,7 +41,7 @@ The classic 75 LeetCode problems that cover the core interview patterns. Premium
 | 11  | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)                                                                             | `bit manipulation`            | Medium     | [011](011-sum-of-two-integers/)                  |
 | 12  | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)                                                                                   | `bit manipulation`            | Easy       | [012](012-number-of-1-bits/)                     |
 | 13  | [Counting Bits](https://leetcode.com/problems/counting-bits/)                                                                                         | `bit manipulation`, `dp`      | Easy       | [013](013-counting-bits/)                        |
-| 14  | [Missing Number](https://leetcode.com/problems/missing-number/)                                                                                       | `bit manipulation`, `math`    | Easy       | —                                                |
+| 14  | [Missing Number](https://leetcode.com/problems/missing-number/)                                                                                       | `bit manipulation`, `math`    | Easy       | [014](014-missing-number/)                       |
 | 15  | [Reverse Bits](https://leetcode.com/problems/reverse-bits/)                                                                                           | `bit manipulation`            | Easy       | —                                                |
 | 16  | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                                                                                     | `dp`                          | Easy       | —                                                |
 | 17  | [Coin Change](https://leetcode.com/problems/coin-change/)                                                                                             | `dp`                          | Medium     | —                                                |
