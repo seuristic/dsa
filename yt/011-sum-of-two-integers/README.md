@@ -2,7 +2,7 @@
 
 **Difficulty:** Medium · **Tags:** bit manipulation, math
 
-**Problem:** [LeetCode 371](https://leetcode.com/problems/sum-of-two-integers/) · **Video:** TODO
+**Problem:** [LeetCode 371](https://leetcode.com/problems/sum-of-two-integers/) · **Video:** [YouTube](https://youtu.be/UMwUtTqa7WI)
 
 ## Problem in Simple Words
 

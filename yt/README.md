@@ -17,7 +17,7 @@ New episode: run `/yt-problem <problem link, name, or statement>` in Claude Code
 | 008 | [Search in Rotated Sorted Array](008-search-in-rotated-sorted-array/)             | `array`, `binary search`    | [Watch](https://youtu.be/b36SNP0jvUo) |
 | 009 | [3Sum](009-3sum/)                                                                 | `array`, `two pointers`     | [Watch](https://youtu.be/UwNn6ADY_XU) |
 | 010 | [Container With Most Water](010-container-with-most-water/)                       | `array`, `two pointers`     | [Watch](https://youtu.be/_Mv4fu6HbsI) |
-| 011 | [Sum of Two Integers](011-sum-of-two-integers/)                                   | `bit manipulation`          | TODO                                  |
+| 011 | [Sum of Two Integers](011-sum-of-two-integers/)                                   | `bit manipulation`          | [Watch](https://youtu.be/UMwUtTqa7WI) |
 | 012 | [Number of 1 Bits](012-number-of-1-bits/)                                         | `bit manipulation`          | TODO                                  |
 | 013 | [Counting Bits](013-counting-bits/)                                               | `bit manipulation`, `dp`    | TODO                                  |
 | 014 | [Missing Number](014-missing-number/)                                             | `array`, `bit manipulation` | TODO                                  |
