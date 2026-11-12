@@ -2,7 +2,7 @@
 
 **Difficulty:** Easy · **Tags:** bit manipulation
 
-**Problem:** [LeetCode 191](https://leetcode.com/problems/number-of-1-bits/) · **Video:** TODO
+**Problem:** [LeetCode 191](https://leetcode.com/problems/number-of-1-bits/) · **Video:** [YouTube](https://youtu.be/DS9rur5uG-A)
 
 ## Problem in Simple Words
 
