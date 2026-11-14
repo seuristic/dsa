@@ -4,7 +4,7 @@
 
 1. Counting Bits: Reuse the Answer for i / 2 | Blind 75 #13
 2. Counting Bits: Drop the Last Bit, Reuse the Rest | Blind 75 #13
-3. Counting Bits: From O(n log n) to O(n) with One Line of DP | Blind 75 #13
+3. Counting Bits: One Line of DP | Blind 75 #13
 
 ## YouTube Description
 

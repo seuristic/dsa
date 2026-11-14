@@ -2,7 +2,7 @@
 
 **Difficulty:** Easy · **Tags:** bit manipulation, dynamic programming
 
-**Problem:** [LeetCode 338](https://leetcode.com/problems/counting-bits/) · **Video:** TODO
+**Problem:** [LeetCode 338](https://leetcode.com/problems/counting-bits/) · **Video:** [YouTube](https://youtu.be/0_z54r5uKns)
 
 ## Problem in Simple Words
 
