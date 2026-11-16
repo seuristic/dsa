@@ -2,7 +2,7 @@
 
 **Difficulty:** Easy · **Tags:** bit manipulation, divide and conquer
 
-**Problem:** [LeetCode 190](https://leetcode.com/problems/reverse-bits/) · **Video:** TODO
+**Problem:** [LeetCode 190](https://leetcode.com/problems/reverse-bits/) · **Video:** [YouTube](https://youtu.be/nzYM212W3u8)
 
 ## Problem in Simple Words
 

@@ -21,7 +21,8 @@ New episode: run `/yt-problem <problem link, name, or statement>` in Claude Code
 | 012 | [Number of 1 Bits](012-number-of-1-bits/)                                         | `bit manipulation`          | [Watch](https://youtu.be/DS9rur5uG-A) |
 | 013 | [Counting Bits](013-counting-bits/)                                               | `bit manipulation`, `dp`    | [Watch](https://youtu.be/0_z54r5uKns) |
 | 014 | [Missing Number](014-missing-number/)                                             | `array`, `bit manipulation` | TODO                                  |
-| 015 | [Reverse Bits](015-reverse-bits/)                                                 | `bit manipulation`          | TODO                                  |
+| 015 | [Reverse Bits](015-reverse-bits/)                                                 | `bit manipulation`          | [Watch](https://youtu.be/nzYM212W3u8) |
+| 016 | [Climbing Stairs](016-climbing-stairs/)                                           | `dp`                        | TODO                                  |
 
 ## Blind 75
 
@@ -44,7 +45,7 @@ The classic 75 LeetCode problems that cover the core interview patterns. Premium
 | 13  | [Counting Bits](https://leetcode.com/problems/counting-bits/)                                                                                         | `bit manipulation`, `dp`      | Easy       | [013](013-counting-bits/)                        |
 | 14  | [Missing Number](https://leetcode.com/problems/missing-number/)                                                                                       | `bit manipulation`, `math`    | Easy       | [014](014-missing-number/)                       |
 | 15  | [Reverse Bits](https://leetcode.com/problems/reverse-bits/)                                                                                           | `bit manipulation`            | Easy       | [015](015-reverse-bits/)                         |
-| 16  | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                                                                                     | `dp`                          | Easy       | —                                                |
+| 16  | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                                                                                     | `dp`                          | Easy       | [016](016-climbing-stairs/)                      |
 | 17  | [Coin Change](https://leetcode.com/problems/coin-change/)                                                                                             | `dp`                          | Medium     | —                                                |
 | 18  | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)                                                       | `dp`, `binary search`         | Medium     | —                                                |
 | 19  | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)                                                               | `dp`, `string`                | Medium     | —                                                |
